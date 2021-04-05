@@ -35,6 +35,12 @@ public class Sample
 		Assert.assertEquals(driver.getTitle(), "Facebook");
 	}
 	
+	@Test
+	public void verifyUrl()
+	{
+		Assert.assertEquals(driver.getCurrentUrl(), "http://www.fb.com");
+	}
+	
 	@AfterTest
 	public void tearDown()
 	{
